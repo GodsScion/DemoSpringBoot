@@ -1,16 +1,21 @@
 package com.nibokka.myApp;
 
-// import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 
 @Component
 public class Dev {
     
-    // @Autowired          // Field injection
-    Computer computer;
+    // @Autowired           // Field injection
+    Computer computer;      // You need to declare variables in all injection types (field, constructor, setter)
 
-    public Dev(Computer computer) { // Constructor injection, no need to use @Autowired, but you'll need to declare variable "Computer computer;" like in line 11
+    // public Dev(Computer computer) { // Constructor injection, no need to use @Autowired
+    //     this.computer = computer;
+    // }
+
+    @Autowired              // Setter injection
+    public void setComputer(Computer computer) {
         this.computer = computer;
     }
 
