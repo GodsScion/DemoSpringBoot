@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class Dev {
     
     @Autowired           // Field injection (Apparently not recommended!)
-    @Qualifier("laptop")    // Among Laptop and desktop class we choose laptop, notice that name is lowercase when inputted for Class Laptop as "laptop"
+    @Qualifier("laptop")    // Among Laptop and desktop class we choose laptop, notice that name is lowercase when inputted for Class Laptop as "laptop". Keep in mind @Qualifier > @Primary in priority
     Computer computer;      // You need to declare variables in all injection types (field, constructor, setter)
 
     // public Dev(Computer computer) { // Constructor injection, no need to use @Autowired  (Good practice to use constructor or setter injection)
