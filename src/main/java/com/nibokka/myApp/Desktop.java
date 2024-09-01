@@ -1,10 +1,10 @@
 package com.nibokka.myApp;
 
-import org.springframework.context.annotation.Primary;
+// import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-@Primary
+// @Primary     // There can only be one primary, so we labelled Desktop as primary
 public class Desktop implements Computer{
     public void compile() {
         System.out.println("Desktop is compiling");
