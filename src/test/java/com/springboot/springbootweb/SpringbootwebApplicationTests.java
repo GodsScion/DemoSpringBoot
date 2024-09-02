@@ -1,10 +1,10 @@
-package com.nibokka.myApp;
+package com.springboot.springbootweb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MyAppApplicationTests {
+class SpringbootwebApplicationTests {
 
 	@Test
 	void contextLoads() {
