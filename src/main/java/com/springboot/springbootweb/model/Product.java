@@ -2,8 +2,14 @@ package com.springboot.springbootweb.model;
 
 import org.springframework.stereotype.Component;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 @Component
+@Entity
 public class Product {
+    
+    @Id
     private int id;
     private String name;
     private float price;
